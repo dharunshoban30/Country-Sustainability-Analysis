@@ -3,6 +3,8 @@
 ## Overview
 This project analyzes global sustainable energy trends to identify the most sustainable nations from 2000 to 2020 using D3.js. By using interactive visualizations, the project highlights the relationship between renewable energy adoption, energy consumption, and economic growth across different regions. Two comprehensive dashboards provide insights into country-specific trends and global sustainability metrics, making it a valuable tool for understanding the impact of sustainable energy on environmental and socio-economic factors. The project consists of two distinct but interconnected dashboards, with navigation through an arrow button on the top right corner of the dashboards. 
 
+The preview of the dashboards are located in the `Dashboard Preview` folder.
+
 ## Dataset Overview
 The dataset used for this project is `sustainable_energy.csv` from Kaggle, which provides information on sustainable energy adoption and energy metrics across different countries from 2000 to 2020. The data has been meticulously cleaned and processed to ensure consistency and accuracy.
     
