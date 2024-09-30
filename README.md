@@ -9,24 +9,24 @@ The dataset used for this project is `sustainable_energy.csv` from Kaggle, which
 
 ## Key Visualizations
 **Dashboard 1: Global Sustainable Energy Overview**
-1. Bubble Chart:
+1. **Bubble Chart:**
       - Displays renewable electricity generating capacity per capita vs. access to electricity.
       - Animated over time, showing trends in energy development.
-2. Comparative Bar Chart:
+2. **Comparative Bar Chart:**
       - Highlights the top 5 countries with the highest and lowest renewable energy shares.
-3. Line Chart:
+3. **Line Chart:**
       - Shows the change in renewable electricity generating capacity per capita over the years.
-4. Vertical Bar Chart:
+4. **Vertical Bar Chart:**
       - Visualizes primary energy consumption per capita, revealing stability and minor fluctuations.
-5. Scatter Plot:
+5. **Scatter Plot:**
       - Explores the correlation between GDP per capita and access to electricity, highlighting disparities in energy access and economic prosperity.
 
 **Dashboard 2: Country-Specific Energy Profiles**
-1. Interactive Map:
+1. **Interactive Map:**
       - Allows users to select a country and view its energy statistics, such as renewable energy share, energy consumption, and electricity access.
-2. Stacked Area Chart:
+2. **Stacked Area Chart:**
       - Shows the mix of energy sources (fossil fuels, nuclear, and renewables) for each country over time.
-3. Comparative Area Chart:
+3. **Comparative Area Chart:**
       - Compares energy generation and consumption per capita for the selected country, providing insights into its energy balance.
 
 ## Key Findings
