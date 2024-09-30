@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Sustainable Energy Dashboard</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000E19;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            overflow: hidden; 
+        }
+        .dashboard {
+            width: 1500px;
+            height: 1400px;
+            display: grid;
+            grid-template-areas:
+                "title title nav"
+                "bubble comparativeBarChart comparativeBarChart"
+                "bubble lineChart lineChart"
+                "verticalBarChart scatterPlot scatterPlot";
+            grid-template-rows: 100px 1fr 1fr 1.5fr;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 10px;
+            margin: 20px; 
+        }
+        .title {
+            grid-area: title;
+            text-align: left;
+            font-size: 45px;
+            margin: 0;
+            padding: 30px 10px 10px 10px; 
+        }
+        .chart {
+            background-color: #000E19;
+            border: 5px solid white;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #bubble {
+            grid-area: bubble;
+        }
+        #comparativeBarChart {
+            grid-area: comparativeBarChart;
+        }
+        #lineChart {
+            grid-area: lineChart;
+        }
+        #verticalBarChart {
+            grid-area: verticalBarChart;
+        }
+        #scatterPlot {
+            grid-area: scatterPlot;
+        }
+        .nav {
+            grid-area: nav;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; 
+        }
+        .nav img {
+            cursor: pointer;
+            width: 100px; 
+            height: 100px; 
+            border: 5px solid white; 
+            box-sizing: border-box; 
+            background-color: #000E19; 
+        }
+        .hidden {
+            display: none;
+        }
+        .slide-out-left {
+            animation: slideOutToLeft 0.5s forwards;
+        }
+        @keyframes slideOutToLeft {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="dashboard1" class="dashboard">
+        <h1 class="title">Global Sustainable Energy Dashboard</h1>
+        <div id="bubble" class="chart"></div>
+        <div id="comparativeBarChart" class="chart"></div>
+        <div id="lineChart" class="chart"></div>
+        <div id="scatterPlot" class="chart"></div>
+        <div id="verticalBarChart" class="chart"></div>
+        <div class="nav">
+            <img src="Image/Arrow1.png" alt="Navigate to Dashboard 2" onclick="navigateToDashboard2()">
+        </div>
+    </div>
+    <script>
+        function navigateToDashboard2() {
+            document.getElementById('dashboard1').classList.add('slide-out-left');
+            setTimeout(() => {
+                window.location.href = 'dashboard2.html';
+            }, 500); 
+        }
+
+    </script>
+    <script src="JS/lineChart.js"></script>
+    <script>
+    </script>
+    <script src="JS/verticalBarChart.js"></script>
+    <script>
+    </script>
+    <script src="JS/bubble.js"></script>
+    <script>
+    </script>
+    <script src="JS/scatterPlot.js"></script>
+    <script>
+    </script>
+    <script src="JS/comparativeBarChart.js"></script>
+</body>
+</html>
