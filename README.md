@@ -48,28 +48,24 @@ The dataset used for this project is `sustainable_energy.csv` from Kaggle, which
 The project highlights global disparities in energy access and renewable adoption, showing that developed nations with higher GDPs have better energy infrastructure and cleaner energy solutions, while underdeveloped regions struggle to transition from non-renewable sources. Despite this, the global rise in renewable capacity per capita reflects growing efforts to prioritize sustainability, emphasizing that economic growth and policy support are key to driving renewable energy adoption and achieving global energy equity.
 
 ## Setup Instructions
-To execute the server, follow these steps in your terminal:
-1) Install `http-server` (if you don’t have it already):
-   - bash
-     ```
-     npm install -g http-server
-     ```
- 
-2) Navigate to the project directory:
+To execute the server, follow these steps:
+
+1) Navigate to the project directory in command prompt:
    - bash
      ```
      cd path\to\your\project-directory
      ```
    
-3) Launch the server:
+2) Launch the server:
    - bash
      ```
-     http-server
+     python -m http.server
      ```
-4) Open your browser and go to:
+     
+3) Open your browser and go to:
    - bash
      ```
-     [http-server](http://localhost:8080)
+     localhost:8000/dashboard1.html
      ```
 
 ## References
