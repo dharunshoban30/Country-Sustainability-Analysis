@@ -51,7 +51,7 @@ The project highlights global disparities in energy access and renewable adoptio
 To execute the server, follow these steps:
 
 1) Navigate to the project directory in command prompt:
-   - bash
+   - 
      ```
      cd path\to\your\project-directory
      ```
